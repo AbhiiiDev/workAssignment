@@ -64,7 +64,7 @@
         <hr className="border-amber-950 border-2" />
     <div className="text-center mt-4">
 
-        <input type="text" className="border-2 border-amber-950 w-60 text-center" placeholder="search accordian" value={value} onChange={handleChange} />
+        <input type="text" className="border-2 p-2 border-amber-950 w-60 text-center" placeholder="search accordian" value={value} onChange={handleChange} />
 
     </div>
         <div className="flex justify-center">
