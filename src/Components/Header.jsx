@@ -45,7 +45,7 @@ setIsOpen(!isOpen)
 
     <div className="bg-transparent md:px-10 flex justify-evenly py-10 p-3">
       <div>
-        <span className="font-bold text-white">Name</span>
+        <span className="font-bold text-white">Logo</span>
       </div>
 
 
