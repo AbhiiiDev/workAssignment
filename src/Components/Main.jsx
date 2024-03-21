@@ -1,5 +1,6 @@
     import { useState } from "react";
     import { FaPlus } from "react-icons/fa6";
+    import { FaMinus } from "react-icons/fa";
     import assignmentImage from "/src/resources/assignment3.jpg";
     import { data } from "../assets/data";
     const Main = () => {
@@ -90,7 +91,7 @@ setFilterData(filterItems);
             {filterData.map((item, index) => (
                 <div
                 key={index}
-                className={`item bg-red-50 w-[350px] md:w-[400px] cursor-pointer border-2 border-gray-400 p-1`}
+                className={`item bg-red-50 w-[350px] md:w-[400px] cursor-pointer border-2 transition-all duration-300 border-gray-400 p-1`}
                 onClick={() => handleClick(index)}
                 style={{ height: openIndex === index ? "210px" : "80px" }}
                 >
@@ -101,7 +102,10 @@ setFilterData(filterItems);
                         {item.subTitle}
                     </h2>
                     </div>
-                    <FaPlus color="black" className="" size={20} />
+                    {
+     openIndex ===index ? <FaMinus  color="black" className="" size={20} /> :  <FaPlus color="black" className="" size={20}/>
+                    }
+             
                 </div>
                 {openIndex === index && (
                     <div className="info text-amber-950">{item.info}</div>

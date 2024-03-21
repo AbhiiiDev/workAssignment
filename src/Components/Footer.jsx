@@ -37,7 +37,7 @@ const Footer = () => {
           </h1>
           <p>Join our mailing list and get 10% off your next order</p>
         </div>
-        <div className="flex flex-row items-center justify-center mt-16">
+        <div className="flex items-center mr-4 justify-center mt-16">
           <input
             className="bg-teal-900 text-center text-rose-50 mr-6 w-96 border-none outline-none"
             type="text"
@@ -48,7 +48,7 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="m-auto border-b border-gray-500 w-1/2"></div>
+        <div className="md:m-auto border-b border-gray-500 w-1/2"></div>
       </div>
 
 
@@ -116,13 +116,13 @@ const Footer = () => {
       </div>
       
       {/* FOR MOBILE SCREEN */}
-      <div className="h-96 md:hidden flex flex-col">
+      <div className="h-96 p-4 md:hidden flex flex-col">
         <div className="m-auto">
           <img className="h-32" src={logo} alt="" />
         </div>
 
             <div className="text-center mb-5">
-                <h2 className="text-amber-950 font-semibold text-lg">Information</h2>
+                <h2 className="text-amber-950 font-semibold text-lg">INFORMATION</h2>
                 <ul>
                 {Links1.map((link) => (
                     <li key={link.name} className="">
