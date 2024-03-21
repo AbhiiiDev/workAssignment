@@ -90,10 +90,9 @@ setFilterData(filterItems);
             {filterData.map((item, index) => (
                 <div
                 key={index}
-                className={`item bg-red-50 h-[${
-                    openIndex === index ? "210px":"80px"
-                }] w-[350px] md:w-[400px] md:h-[${openIndex===index ?"210px":"80px"}] cursor-pointer border-2 border-gray-400 p-1`}
+                className={`item bg-red-50 w-[350px] md:w-[400px] cursor-pointer border-2 border-gray-400 p-1`}
                 onClick={() => handleClick(index)}
+                style={{ height: openIndex === index ? "210px" : "80px" }}
                 >
                 <div className="flex justify-between p-1 flex-wrap">
                     <div>
